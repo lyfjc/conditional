@@ -9,6 +9,9 @@ public class MagicConfig {
 
   @Bean
   @Conditional(MagicExistsCondition.class)
+  /*
+   条件化的bean
+   */
   public MagicBean magicBean() {
     return new MagicBean();
   }
